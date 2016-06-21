@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Aula</string>
+    <string name="name">Nome</string>
+    <string name="cpf">CPF</string>
+    <string name="address">Endereço</string>
+    <string name="dataBirth">Data Nascimento</string>
+    <string name="phone">Telefne</string>
+    <string name="save">Salvar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="date">Date</string>
+    <string name="List">Listar</string>
+</resources>
