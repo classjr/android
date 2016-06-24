@@ -1,5 +1,6 @@
+package com.br.turismo.model;
 
-// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// <editor-fold defaultstate="collapsed" desc=" UML Marker ">
 // #[regen=yes,id=DCE.4631845F-A612-44E8-66E3-C61D1FAA3BFB]
 // </editor-fold> 
 public class Login {

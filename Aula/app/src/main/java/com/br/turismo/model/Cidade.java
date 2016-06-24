@@ -1,5 +1,6 @@
+package com.br.turismo.model;
 
-// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// <editor-fold defaultstate="collapsed" desc=" UML Marker ">
 // #[regen=yes,id=DCE.EBD9E904-DF89-EFB9-1586-5FE311E43CA6]
 // </editor-fold> 
 public class Cidade {

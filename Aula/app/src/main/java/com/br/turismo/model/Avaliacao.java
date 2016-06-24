@@ -1,5 +1,6 @@
+package com.br.turismo.model;
 
-// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// <editor-fold defaultstate="collapsed" desc=" UML Marker ">
 // #[regen=yes,id=DCE.50B5CE16-9A9B-3953-0B77-C3A6B6235D3E]
 // </editor-fold> 
 public class Avaliacao {

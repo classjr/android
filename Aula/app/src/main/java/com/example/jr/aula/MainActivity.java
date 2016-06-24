@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         SQLiteDatabase dataSet = this.dataBase.getReadableDatabase();
 
 
-        Cursor cursor = dataSet.rawQuery("SELECT * FROM Login", null);
+        Cursor cursor = dataSet.rawQuery("SELECT * FROM com.br.turismo.model.Login", null);
         String[] lista = new String[cursor.getCount()];
 
         cursor.moveToFirst();
@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
         cursor.close();
         Intent intent = new Intent(this,TestarIntent.class);
         Bundle bundle = new Bundle();
-        bundle.putStringArray("Login",lista);
+        bundle.putStringArray("com.br.turismo.model.Login",lista);
         intent.putExtras(bundle);
         startActivity(intent);
     }
@@ -200,10 +200,10 @@ public class MainActivity extends AppCompatActivity {
             SQLiteDatabase dataset = this.dataBase.getWritableDatabase();
             ContentValues values = new ContentValues();
 
-            values.put("Login",name.getText().toString());
+            values.put("com.br.turismo.model.Login",name.getText().toString());
             values.put("Senha",cpf.getText().toString());
 
-            Long id = dataset.insert("Login", null, values);
+            Long id = dataset.insert("com.br.turismo.model.Login", null, values);
             Toast.makeText(this,"inserido com sucesso: "+ String.valueOf(id),Toast.LENGTH_LONG).show();
         }catch (Exception  ex){
             Toast.makeText(this,"Problemas: "+ ex.getMessage(),Toast.LENGTH_LONG).show();

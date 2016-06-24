@@ -1,5 +1,6 @@
+package com.br.turismo.model;
 
-// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// <editor-fold defaultstate="collapsed" desc=" UML Marker ">
 // #[regen=yes,id=DCE.208817D1-B5CF-1111-B3C4-EE149FA35D95]
 // </editor-fold> 
 public class Endereco {

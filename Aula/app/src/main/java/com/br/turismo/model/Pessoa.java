@@ -1,5 +1,6 @@
+package com.br.turismo.model;
 
-// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// <editor-fold defaultstate="collapsed" desc=" UML Marker ">
 // #[regen=yes,id=DCE.EF188DB4-F805-BFFB-D487-A13C95DD7968]
 // </editor-fold> 
 public class Pessoa {
