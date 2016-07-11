@@ -15,9 +15,8 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/login"
-        android:layout_marginTop="163dp"
         android:hint="L O G I N"
-        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -29,7 +28,7 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/senha"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="44dp"
         android:hint="S E N H A"
         android:singleLine="false"
         android:linksClickable="false"
@@ -46,8 +45,35 @@
         android:layout_height="wrap_content"
         android:text="E N T R A R"
         android:id="@+id/entrar"
-        android:layout_below="@+id/senha"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/hotel"
+        android:layout_above="@+id/login"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="40dp" />
+        android:layout_marginBottom="69dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastre-se"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuperar Senha"
+        android:id="@+id/recuperarSenha"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
