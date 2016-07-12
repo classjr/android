@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.br.turismo.control.login.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,8 +17,6 @@
         </activity>
         <activity android:name=".com.example.jr.aula.intents.TestarIntent" />
         <activity android:name=".com.example.jr.aula.com.example.jr.aula.contentProvider.ExampleContentProvider" />
-        <activity android:name="com.br.turismo.control.login.login" />
-        <activity android:name="com.br.turismo.control.login.Login" />
         <activity android:name="com.br.turismo.control.listar.Listar" />
         <activity android:name="com.br.turismo.control.cadastrar.Cadastrar"></activity>
     </application>

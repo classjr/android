@@ -18,7 +18,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="50dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:hint="NOME" />
@@ -27,8 +27,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Cadastro Usuário"
+        android:text="Cadastro de Usuário"
         android:id="@+id/textView6"
+        android:layout_marginTop="1dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -37,10 +38,11 @@
         android:layout_height="wrap_content"
         android:text="MASCULINO"
         android:id="@+id/radioButton"
-        android:checked="false"
-        android:layout_alignTop="@+id/radioButton2"
-        android:layout_toRightOf="@+id/textView7"
-        android:layout_toEndOf="@+id/textView7" />
+        android:checked="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/editText" />
 
     <RadioButton
         android:layout_width="wrap_content"
@@ -48,23 +50,11 @@
         android:text="FEMININO"
         android:id="@+id/radioButton2"
         android:checked="false"
-        android:layout_below="@+id/editText"
-        android:layout_toRightOf="@+id/radioButton"
-        android:layout_toEndOf="@+id/radioButton"
-        android:layout_marginLeft="62dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="42dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Sexo:"
-        android:id="@+id/textView7"
-        android:layout_alignBottom="@+id/radioButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/radioButton2" />
+        android:layout_alignTop="@+id/radioButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="52dp"
+        android:layout_marginEnd="52dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -72,6 +62,7 @@
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/editText2"
+        android:layout_marginTop="10dp"
         android:hint="EMAIL"
         android:layout_below="@+id/radioButton"
         android:layout_alignParentLeft="true"
@@ -80,25 +71,24 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="CADASTRAR"
         android:id="@+id/button3"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="44dp" />
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="CANCELAR"
         android:id="@+id/button4"
-        android:layout_alignBottom="@+id/button3"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/radioButton2"
-        android:layout_alignStart="@+id/radioButton2" />
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -106,6 +96,7 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/editText3"
+        android:layout_marginTop="40dp"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -119,11 +110,13 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/editText4"
-        android:hint="senha"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/editText3"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:hint="*******" />
+
 
 </RelativeLayout>
