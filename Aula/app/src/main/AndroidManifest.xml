@@ -18,7 +18,7 @@
         <activity android:name=".com.example.jr.aula.intents.TestarIntent" />
         <activity android:name=".com.example.jr.aula.com.example.jr.aula.contentProvider.ExampleContentProvider" />
         <activity android:name="com.br.turismo.control.listar.Listar" />
-        <activity android:name="com.br.turismo.control.cadastrar.Cadastrar"></activity>
+        <activity android:name="com.br.turismo.control.cadastrar.CadastrarUsuario"></activity>
     </application>
 
 </manifest>

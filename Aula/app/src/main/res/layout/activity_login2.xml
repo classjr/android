@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/login"
+        android:id="@+id/loginLogar"
         android:hint="L O G I N"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
@@ -26,17 +26,18 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="E N T R A R"
-        android:id="@+id/entrar"
-        android:layout_above="@+id/button2"
+        android:id="@+id/entrarLogar"
+        android:layout_above="@+id/cadastroLogar"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="validarLogin"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:src="@drawable/hotel"
-        android:layout_above="@+id/login"
+        android:layout_above="@+id/loginLogar"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="69dp" />
@@ -45,21 +46,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cadastre-se"
-        android:id="@+id/button2"
+        android:id="@+id/cadastroLogar"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="layoutCadastrarUsuario"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText5"
+        android:id="@+id/senhaLogar"
         android:hint="********"
-        android:layout_below="@+id/login"
+        android:layout_below="@+id/loginLogar"
         android:layout_marginTop="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"

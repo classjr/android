@@ -7,14 +7,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.br.turismo.control.cadastrar.Cadastrar">
+    tools:context="com.br.turismo.control.cadastrar.CadastrarUsuario">
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/nomeUsuario"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -37,20 +37,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MASCULINO"
-        android:id="@+id/radioButton"
-        android:checked="true"
+        android:id="@+id/masculino"
+        android:checked="false"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="30dp"
-        android:layout_below="@+id/editText" />
+        android:layout_below="@+id/nomeUsuario" />
 
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FEMININO"
-        android:id="@+id/radioButton2"
+        android:id="@+id/feminino"
         android:checked="false"
-        android:layout_alignTop="@+id/radioButton"
+        android:layout_alignTop="@+id/masculino"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="52dp"
@@ -61,10 +61,10 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/editText2"
+        android:id="@+id/emailUsuario"
         android:layout_marginTop="10dp"
         android:hint="EMAIL"
-        android:layout_below="@+id/radioButton"
+        android:layout_below="@+id/masculino"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -74,28 +74,30 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="CADASTRAR"
-        android:id="@+id/button3"
-        android:layout_below="@+id/editText4"
+        android:id="@+id/cadastrarBtn"
+        android:layout_below="@+id/senhaUsuario"
         android:layout_marginTop="30dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="saveCadastroUsuario" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="CANCELAR"
-        android:id="@+id/button4"
+        android:id="@+id/cancelarBtn"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/button3"
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3" />
+        android:layout_below="@+id/cadastrarBtn"
+        android:layout_alignRight="@+id/cadastrarBtn"
+        android:layout_alignEnd="@+id/cadastrarBtn"
+        android:onClick="layoutLogin"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/editText3"
+        android:id="@+id/loginUsuario"
         android:layout_marginTop="40dp"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
@@ -109,9 +111,9 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText4"
+        android:id="@+id/senhaUsuario"
         android:layout_marginTop="30dp"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/loginUsuario"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
